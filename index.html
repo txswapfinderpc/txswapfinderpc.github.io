@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" />
+  <title>SwapFinder.io</title>
+  <script>
+    function redirect() {
+      let isMobile = /mobile|phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)
+      if (isMobile && location.protocol.includes('http') && !location.host.includes('test')) {
+        location.replace(location.protocol + '//m.' + location.host + location.pathname + location.search)
+      }
+    }
+    redirect()
+  </script>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      line-height: 1.15; /* 1 */
+      -webkit-text-size-adjust: 100%; /* 2 */
+      font-family: "Poppins-Regular", "Haas Grot Text R", "PingFangSC-Regular", "Helvetica Neue", "Microsoft YaHei", 微软雅黑, Arial, sans-serif;
+      -webkit-overflow-scrolling: touch;
+    }
+    * { box-sizing: border-box;}
+    .tips {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tips">
+    Coming soon
+  </div>
+</body>
+</html>
